@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Testing Logo" class="logo" src="./assets/testing.png">
+    <HelloWorld/>
+    
   </div>
 </template>
 
@@ -12,7 +13,7 @@ export default {
   name: 'app',
   components: {
     HelloWorld
-  }
+  } 
 }
 </script>
 
@@ -25,4 +26,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.logo {
+  width: 30%;
+  height: auto;
+}
+
+
 </style>
