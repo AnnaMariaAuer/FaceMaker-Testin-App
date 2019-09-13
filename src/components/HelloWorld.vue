@@ -140,7 +140,7 @@ export default {
       radio_d3: '',
       random_index: 0,
       counter: 0,
-      counter_limit: 3, /**Number of images a user is supposed to rank */
+      counter_limit: 30, /**Number of images a user is supposed to rank */
       user_id: '',
       random_placeholder: '',
       display_warning_number: 'none',
