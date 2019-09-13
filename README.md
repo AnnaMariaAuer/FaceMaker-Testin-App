@@ -1,4 +1,4 @@
-# FaceMaker-Testin App
+# FaceMaker-Testing App
 
 ## Project setup
 ```
