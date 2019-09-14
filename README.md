@@ -1,29 +1,17 @@
-# faces
+# FaceMaker-Testing App
 
 ## Project setup
 ```
-npm install
+install node.js: npm install
+install vue.js: https://vuejs.org/v2/guide/installation.html
+install buefy: https://buefy.org/documentation/start/
 ```
 
-### Compiles and hot-reloads for development
+### Run project
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+Browser: localhost:8080
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
