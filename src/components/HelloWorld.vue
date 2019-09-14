@@ -778,7 +778,6 @@ export default {
     const shuffle_place = Math.floor(Math.random() * 3);
     this.random_index = idx;
     this.random_placeholder = shuffle_place;
-    console.log('random_placeholder: ' + this.random_placeholder);
  
       if (shuffle_place == 0){
         this.selectedImage_d1 = this.images_all[idx];
@@ -835,6 +834,19 @@ export default {
         const data = JSON.stringify(this.arr);
         window.localStorage.setItem('arr', data);
         console.log(JSON.parse(window.localStorage.getItem('arr')))
+
+       /**Downloads json-File when a testperson is finished */
+        if (this.counter==this.counter_limit){
+          const blob = new Blob([data], {type: 'text/plain'})
+          const e = document.createEvent('MouseEvents'),
+          a = document.createElement('a');
+          a.download = "test.json";
+          a.href = window.URL.createObjectURL(blob);
+          a.dataset.downloadurl = ['text/json', a.download, a.href].join(':');
+          e.initEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+          a.dispatchEvent(e);
+      }
+
     }
     },
 
@@ -848,7 +860,6 @@ export default {
         const shuffle_place = Math.floor(Math.random() * 3);
         this.random_index = idx;
         this.random_placeholder = shuffle_place;
-        console.log('random_placeholder: ' + this.random_placeholder);
  
         if (shuffle_place == 0){
           this.selectedImage_d1 = this.images_all[idx];
